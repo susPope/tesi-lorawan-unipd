@@ -1,27 +1,32 @@
 \chapter{Introduzione}
 \label{cap:introduzione}
 
-Introduzione al contesto applicativo.\\
-
-\noindent Esempio di utilizzo di un termine nel glossario \\
-\gls{api}. \\
-
-\noindent Esempio di citazione in linea \\
-\cite{site:agile-manifesto}. \\
-
-\noindent Esempio di citazione nel pie' di pagina \\
-citazione\footcite{womak:lean-thinking} \\
+Il contesto applicativo di cui si tratta in questo lavoro è quello dell'\gls{iot}, un paradigma che si riferisce alla connessione di oggetti fisici a Internet, consentendo loro di comunicare e interagire tra loro e con gli utenti.
+L'\gls{iot} ha un impatto significativo su diversi settori, tra cui l'agricoltura, dove può essere utilizzato per monitorare le condizioni del terreno, gestire l'irrigazione, monitorare la salute delle colture e ottimizzare l'uso delle risorse. 
+In questo contesto, le tecnologie di comunicazione a bassa potenza e lunga distanza, come LoRaWAN, sono particolarmente adatte per la trasmissione dei dati raccolti dai sensori in ambienti rurali, dove la copertura di rete può essere limitata.
 
 \section{L'azienda}
-
-Descrizione dell'azienda.
+\textbf{M31} nasce nel 2007 ad opera di un gruppo di imprenditori, ricercatori universitari e professionisti appassionati di tecnologia, coordinati da Ruggero Frezza.
+\\
+Sin dalla sua costituzione, il cuore di M31 è il suo team di ingegneria - nei quindici anni di operatività, la Società ha svolto più di cento progetti di innovazione a vantaggio di startup proprie, imprese del territorio e grandi gruppi.
+\\
+La visione aziendale è quella di affiancare i clienti nel realizzare le loro idee di innovazione mediante l'applicazione di tecnologie allo stato dell'arte e degli output della ricerca universitaria.
+\\
+Tutto questo incarna il loro motto: \textbf{«With You. Beyond.»}
+\\ \cite{site:sito-m31}.
 
 \section{L'idea}
-
-Introduzione all'idea dello stage.
+L'idea di questo lavoro è progettare, realizzare e validare sperimentalmente una infrastruttura LoRaWAN privata completa orientata a contesti agricoli. 
+Il sistema, infatti, prevede l'implementazione di tutta l'infrastruttura:
+\begin{itemize}
+    \item dallo studio, dalla scelta e dall'implementazione dei nodi sensore LoRaWAN con firmware custom per la raccolta dati,
+    \item passando per un gateway LoRaWAN implementato su Raspberry Pi con concentratore SX1303 in banda EU868;
+    \item fino ad arrivare al server LoRaWAN locale basato su ChirpStack, per la gestione dei dispositivi, la raccolta dei dati e l'integrazione con sistemi esterni.
+\end{itemize}
+Il lavoro non si limita alla sola installazione dei componenti, ma punta a caratterizzare il sistema dal punto di vista prestazionale, individuandone limiti, comportamento reale in campo e linee guida per una possibile industrializzazione.
 
 \section{Organizzazione del testo}
-
+% TODO: aggiornare i titoli dei capitoli
 \begin{description}
     \item[{\hyperref[cap:processi-metodologie]{Il secondo capitolo}}] descrive ...
     
@@ -36,6 +41,7 @@ Introduzione all'idea dello stage.
     \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive ...
 \end{description}
 
+% TODO: aggiornare le convenzioni
 Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
 \begin{itemize}
 	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
